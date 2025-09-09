@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Toolbar Section -->
+        <RelativeLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/toolbar_layout_id"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/navblue"
+                    app:titleTextColor="#FFFFFF">
+
+                    <ImageView
+                        android:id="@+id/back_img"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:src="@drawable/baseline_arrow_back_ios_new_24" />
+
+
+                    <ImageView
+                        android:id="@+id/tv_header_title"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:src="@drawable/logo" />
+                </androidx.appcompat.widget.Toolbar>
+
+            </com.google.android.material.appbar.AppBarLayout>
+        </RelativeLayout>
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:fitsSystemWindows="true"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Terms and Conditions Text -->
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_termscondlt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:gravity="start"
+                    android:text="@string/lttermscondi"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="@dimen/_10sdp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+                <!-- Settlement Info Text -->
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_termscondlt"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:gravity="center"
+                    android:text="@string/ltinfo"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfocsp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfocsp"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfoindia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfocsp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfoindia"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfolimit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfoindia"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfolimit"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfolimit1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfolimit"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfolimit1"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfolimit2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfolimit1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfolimit2"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfolimit3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfolimit2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfolimit3"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfolimit4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfolimit3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfolimit4"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfolimicmname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfolimit4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfocmname"
+                    android:gravity="start"
+                    android:textStyle="bold"
+
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfolimibankname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfolimicmname"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfobanknamename"
+                    android:textStyle="bold"
+
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfolimiaccno"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfolimibankname"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfoaccno"
+                    android:gravity="start"
+                    android:textStyle="bold"
+
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfolimitbranchname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfolimiaccno"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfobranchname"
+                    android:gravity="start"
+                    android:textStyle="bold"
+
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfolimitbranchcode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfolimitbranchname"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfobranchcode"
+                    android:textStyle="bold"
+
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfolimitifsccode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfolimitbranchcode"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfoifsccode"
+                    android:gravity="start"
+                    android:textStyle="bold"
+
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfolimitacctype"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfolimitifsccode"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfoacctype"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfolimit5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfolimitacctype"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfolimit5"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfolimit6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfolimit5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:text="@string/ltinfolimit6"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfoeng"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfolimit6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:gravity="center"
+                    android:text="@string/ltinfoeng"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfocspeng"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfoeng"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfocspeng"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfoindiaeng"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfocspeng"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfoindiaeng"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfolimiteng"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfoindiaeng"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfolimiteng"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfolimit1eng"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfolimiteng"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfolimit1eng"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfolimit2eng"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfolimit1eng"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfolimit2eng"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfolimit3eng"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfolimit2eng"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfolimit3eng"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfolimit4eng"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfolimit3eng"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfolimit4eng"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfocnameeng"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfolimit4eng"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfocmnameeng"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfobanknameeng"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfocnameeng"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfobanknamenameeng"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfoaccnoeng"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfobanknameeng"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfoaccnoeng"
+                    android:gravity="start"
+                    android:textStyle="bold"
+
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfobnameeng"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfoaccnoeng"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfobranchnameeng"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfobcodeeng"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfobnameeng"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfobranchcodeeng"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfoifsccodeeng"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfobcodeeng"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfoifsccodeeng"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfoacctypeeng"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfoifsccodeeng"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfoacctypeeng"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfolimit5eng"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfoacctypeeng"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/ltinfolimit5eng"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_ltinfolimit6eng"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.9"
+                    app:layout_constraintTop_toBottomOf="@id/txt_ltinfolimit5eng"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

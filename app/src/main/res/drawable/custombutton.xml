@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Set color to transparent to allow `backgroundTint` to show -->
+    <solid android:color="@color/blue" />
+
+    <!-- Optional corner radius for rounded corners -->
+    <corners android:radius="8dp" />
+
+    <!-- Optional border (stroke) -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/blue" />
+</shape>

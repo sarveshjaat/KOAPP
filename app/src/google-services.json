@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "553204519907",
+    "project_id": "nictkoapp",
+    "storage_bucket": "nictkoapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553204519907:android:03eadd774e1eb701c786d6",
+        "android_client_info": {
+          "package_name": "com.nictko.services"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDogGwIBQtScLTKxK6LgUw5R8x5sQLyYSU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

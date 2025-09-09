@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/main"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:context=".activity.LoginActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_welcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="@string/app_name_wel"
+        android:textColor="@color/navblue"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="@dimen/_60sdp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_reg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginLeft="30dp"
+        android:text="@string/logIn"
+        android:textColor="@color/navblue"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_70sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_welcome"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <Spinner
+        android:id="@+id/spinnerBank"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/shape_auto_alyout"
+        android:padding="@dimen/_7sdp"
+        android:textSize="16sp"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintTop_toBottomOf="@id/txt_reg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtLay_user"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/userid"
+        app:endIconMode="clear_text"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintTop_toBottomOf="@id/spinnerBank"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+   >
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/txtInput_userid"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:inputType="text"
+          android:singleLine="true"
+          android:maxLength="20" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtLay_pass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        style="@style/FilledBoxEndIconTint"
+        app:endIconTint="@color/lightgrey"
+        app:endIconMode="password_toggle"
+        app:layout_constraintWidth_percent="0.9"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@id/txtLay_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+      >
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/txt_pass"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:inputType="textPassword"
+          android:maxLength="15" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_forPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:visibility="gone"
+        android:text="@string/fpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtLay_pass" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintWidth_percent="0.7"
+        app:backgroundTint="@color/navblue"
+        android:text="@string/login"
+        android:background="@drawable/custombutton"
+        app:layout_constraintTop_toBottomOf="@id/txt_forPassword"
+        android:textSize="@dimen/_14sdp"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

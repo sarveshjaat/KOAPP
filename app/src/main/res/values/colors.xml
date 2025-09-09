@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="cblueold">#2196F3</color>
+    <color name="cblue">#FF2196F3</color>
+    <color name="navblueold">#89C0EC</color>
+    <color name="navblue">#5499c7</color>
+    <color name="lightgrey">#a4a5a5</color>
+    <color name="blue">#FF2196F3</color>
+    <color name="darkwp">#F4F6FF</color>
+    <color name="darkred">#e74c3c</color>
+    <color name="darkorange">#F26722</color>
+    <color name="iconblue">#FFFFFF</color>
+    <color name="grayone">#D8D8D8</color>
+    <color name="darkbalck">#000080</color>
+    <color name="darkgreen">#ff669900</color>
+    <color name="ticket">#1976D2</color>
+
+</resources>

@@ -1,0 +1,294 @@
+<resources>
+    <string name="app_name">NICT KO </string>
+    <string name="app_name_wel">WELCOME TO NICT KO  !</string>
+
+    <string name="logIn">Log In!</string>
+    <string name="email">Email Address</string>
+
+    <string name="password">Password</string>
+    <string name="fpassword"> Forgot Password</string>
+    <string name="login">Log in</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="username">UserName</string>
+    <string name="userrole">UserRole</string>
+    <string name="userid">User Id</string>
+    <string name="usermobile">Mobile</string>
+
+    <string name="csocode">CSP CODE</string>
+    <string name="settalmentreq"> Settlement Request</string>
+    <string name="koid"> KO ID</string>
+    <string name="ondemandmobile"> Mobile NO.</string>
+    <string name="ondemandremark">Remark</string>
+    <string name="ondemandamount">Amount</string>
+    <string name="ondemandsubmit">Submit</string>
+    <string name="requestadd">Add Limit Request </string>
+    <string name="limitreport">Limit Report </string>
+    <string name="settlementadd">Add Settlement Request</string>
+    <string name="strequest"> Settlement Request</string>
+    <string name="streport"> Settlement Report</string>
+    <string name="lirequest"> Limit Request</string>
+
+    <string name="vsettlementreport">View Settlement Report</string>
+    <string name="vltreport">View Limit Report</string>
+
+    <string name="addlimitreq">Add Limit Request</string>
+    <string name="addlmitlocation">Location</string>
+    <string name="addlmitsdmname">SDP Name</string>
+    <string name="fdate">From Date </string>
+    <string name="todate">To Date </string>
+
+    <string name="settlementtype">Settlement Type</string>
+    <string name="refno">Refrence NO </string>
+    <string name="date">Date</string>
+    <string name="amount">Amount</string>
+    <string name="stype">Settlement Type</string>
+    <string name="stamount">Settlement Amount</string>
+    <string name="ststatus">Settlement Status</string>
+    <string name="datetimeentry">Request Time</string>
+    <string name="datetime">Approve Time</string>
+    <string name="lname">Name </string>
+    <string name="llocation">Location</string>
+    <string name="lddate">Dep.Date</string>
+    <string name="lpaymentmode">Patment Mode</string>
+    <string name="lbname">Branch Name</string>
+    <string name="llsttaus">Status</string>
+    <string name="depddate">Deposit Date </string>
+    <string name="lrmodeofpay">Mode Of Payment </string>
+    <string name="llbname">Branch Name</string>
+    <string name="llbcode">Branch Code</string>
+    <string name="llbankname">Bank Name</string>
+    <string name="llcheckmunber">Checque No</string>
+    <string name="llcheckdate">Checque Date</string>
+    <string name="lltrancno">Transation No</string>
+    <string name="llupoadimg">Upload Image</string>
+    <string name="userlogout">Logout!</string>
+    <string name="comprequest"> Complaint Request</string>
+    <string name="compstatusview"> Complaint Status</string>
+
+    <string name="cstatename">State Name</string>
+    <string name="csdiviname">Division Name</string>
+    <string name="csdname">District Name</string>
+    <string name="cmSelectservice">Select Service</string>
+    <string name="cmSelectbank">Select Bank</string>
+    <string name="cmSelectcategory">Select Category</string>
+
+    <string name="submitcompaint">Submit Complaint</string>
+    <string name="cmserviceid">Service Id /Kiosk Id/Bank ID</string>
+    <string name="cmmessage">Enter Message </string>
+    <string name="cmmessagedtl">If You Have Any Questions, Comments, Complaint Or Requests, Please Feel Free To Contact Us </string>
+    <string name="cmlegger"> Commission Ledger </string>
+    <string name="cmlegmonth">Month </string>
+    <string name="cmledyear">Year </string>
+    <string name="cmledcomi">View Commission </string>
+    <string name="stlimit"> Limit Hold</string>
+    <string name="stnoticeannouce">  Notice Annoucement</string>
+    <string name="stlimitedt"> Enter Limit Hold</string>
+    <string name="stlimitup"> Limit Update</string>
+    <string name="sttermscondi"> Settlement Terms &amp; Condition</string>
+    //hindi settlement
+    <string name="stinfo"> सेटलमेंट संबधी महत्वपूर्ण सूचना</string>
+    <string name="stinfo1">1) सेटलमेंट दिन में छ: शिफ्ट में :-सुबह 08:30 AM, सुबह 11:00 AM, दोपहर 12:00 PM, दोपहर 1:00 PM, दोपहर 2:30 PM, दोपहर 3:30 PM, रात्री 06:00 PM किए जाऐंगे । 06:00 PM बाद सेटलमेंट नहीं किया जायेगा</string>
+    <string name="stinfo2">2) यदि CSP अपनी होल्डिंग राशि अपने खाते में लेना चाहता है,तो कृपया उपरोक्त समय से 15 मिनट पहले अनुरोध करें। यदि CSP 15 मिनट से पहले अनुरोध नहीं करता है, तो सेटलमेंट अनुरोध अगले सूचि (lot) में स्वीकार किया जाएगा।</string>
+    <string name="stinfo3">3) CSP सेटलमेंट अनुरोध केवल तभी स्वीकार किया जाएगा जब होल्डिंग राशि 10000/- से अधिक हो।</string>
+    <string name="stinfo4">4) सेटलमेंट करते समय यदि होल्डिंग में राशि उपलब्ध नहीं होगी तो CSP की रिक्वेस्ट अस्वीकार कर दिया जाएगा।</string>
+    <string name="stinfo5">5) 45 मिनट के अंदर कटौती की गई राशि को CSP खाते में जमा कर दिया जायेगा ।</string>
+    <string name="stinfo6">6) यदि कीओस्क पोर्टल, रिपोर्ट पार्ट एवं बैंक की तरफ से समस्या आती हो तो आपकी राशि संभवतः देरी से आपके अकाउंट में जमा होगी।</string>
+    <string name="stinfo7">7)यदि कोई भी CSP रात्रि सेटलमेंट (पूर्ण और अंतिम सेटलमेंट) में अपनी राशि का सेटलमेंट नहीं करना चाहता है तो एसबीआई पोर्टल बंद होने से पहले सेटलमेंट अनुरोध पोर्टल पर आवश्यक राशि के रूप में अनुरोध करें। (सेटलमेंट नहीं चाहने वाले CSP 0(शून्य) अमाउंट की रिक्वेस्ट करे.)</string>
+    <string name="stinfo8">Note- बैंक हॉलिडे वाले दिन सेटलमेंट दिन में दो बार किया जाता है 12 PMबजे और 2.30 PM बजे। सिर्फ ऑनडिमांड पोर्टल पर रिक्वेस्ट करना अनिवार्य है। लिमिट का समय 11 से 4 बजे तक है।</string>
+    //English settlement
+
+    <string name="stinfoeng"> Important Notice regarding settlement</string>
+    <string name="stinfo1eng">1) Settlements will be done in six shifts :- Morning 08:30 AM, Morning 11:00 AM, Afternoon 12:00 PM, Afternoon 1:00 PM, Afternoon 2:30 PM, Afternoon 3:30 PM, Night 06:00 PM All Settlement request after 06:00 will not entertain and mark rejected</string>
+    <string name="stinfo2eng">2) If CSP want to settle their holding amount to their account, kindly do request before 15 min from above mentioned time. If CSP couldn\'t do request before 15 min of settlement time then settlement request will be accepted in next scheduled.</string>
+    <string name="stinfo3eng">3) CSP settlement request will only be accepted when the settlement amount is more than Rs 10000/-.</string>
+    <string name="stinfo4eng">4) At the time of settlement if holding amount is not available then CSP request will be rejected.</string>
+    <string name="stinfo5eng">5) Deducted amount will be credited within 45 min in CSP account.</string>
+    <string name="stinfo6eng">6) Your settlement may delay only due to some issue "Report part server issue" or "cheque pending from bank side".</string>
+    <string name="stinfo7eng">7) If any CSP don’t want to settle their full holding amount in night settlement(Full and Final settlement). Kindly do request as the required amount or 0(zero) amount on settlement request portal before SBI kiosk portal has been closed.</string>
+    <string name="stinfo8eng">8)Note-: Settlement is done twice a day on bank holidays at 12 noon and 2.30 pm. It is mandatory to place request only on OnDemand portal. Limit time is from 11 to 4 pm</string>
+
+
+    //hindi Limit
+
+    <string name="lttermscondi"> Limit Terms &amp; Condition</string>
+    <string name="ltinfo"> लिमिट  संबधी महत्वपूर्ण सूचना</string>
+    <string name="ltinfocsp"> प्रिय सीएसपी,</string>
+    <string name="ltinfoindia">भारत सरकार की मंषानुसार दिनांक 01 जनवरी 2017 से एनआईसीटी टेक्नोलाॅजिस प्रायवेट लिमिटेड में किसी भी प्रकार का व्यवसायिक कार्य व्यवहार कैष में स्वीकार्य नहीं किया जायेगा । अतः लिमिट लेने के लिये किसी भी प्रकार का केष भुगतान एनआईसीटी टेक्नोलाॅजिस प्रायवेट लिमिटेड के खाते में जमा ना करें।</string>
+    <string name="ltinfolimit">लिमिट लेने के लिये प्रक्रिया 1 जनवरी 2017 से निम्नानुसार रहेगी -</string>
+    <string name="ltinfolimit1">1)लिमिट प्राप्त करने के लिये सीएसपी अपने खाते में जिसमें मासिक कमिषन प्राप्त होता है उसमें लिमिट लेने के लिये निर्धारित राषि जमा करें </string>
+    <string name="ltinfolimit2">2)सीएसपी अपने खाते में राषि जमा करने के पष्चात एनआईसीटी टेक्नोलाॅजिस प्रायवेट लिमिटेड के निम्नानुसार खातें में जिसकी जानकारी नीचे दी गई है में केवल Net-Banking/RTGS/NEFT के माध्यम से ही जमा करें । </string>
+    <string name="ltinfolimit3">3)एनआईसीटी टेक्नोलाॅजिस प्रायवेट लिमिटेड के खाते में राषि प्राप्त होने के पष्चात सीएसपी को निर्धारित लिमिट जारी की जा सकेगी । </string>
+    <string name="ltinfolimit4">4)टलिमिट लेने के लिये एनआईसीटी टेक्नोलाॅजिस प्रायवेट लिमिटेड के खाते की जानकारी-</string>
+    <string name="ltinfolimit5">5)प्रिय सीएसपी उपरोक्त प्रक्रिया के माध्यम से भुगतान करने पर आपको एनआईसीटी टेक्नोलाॅजिस प्रायवेट लिमिटेड के द्वारा लिमिट जल्दी प्राप्त हो सकेगी ।</string>
+    <string name="ltinfolimit6">6)नोट: तथा यदि सीएसपी उक्त प्रक्रिया का पालन नहीं करता है तो एनआईसीटी टेक्नोलाॅजिस प्रायवेट लिमिटेड लिमिट प्रदान करने में असमर्थ रहेगी ।</string>
+    <string name="ltinfolimit6red">थर्ड पार्टी फंड ऑनलाइन और चेक स्वीकार नहीं किए जाएंगे।</string>
+    <string name="ltinfocmname">कम्पनी का नाम :-NICT Technologies Pvt. Ltd.</string>
+    <string name="ltinfobanknamename">बैंक का नाम :- स्टेट बैंक आॅफ इंडिया</string>
+    <string name="ltinfoaccno">खाता क्रमांक :- 35864470247</string>
+    <string name="ltinfobranchname">शाखा :- स्कीम न. 94, इंदौर</string>
+    <string name="ltinfobranchcode">शाखा कोड :-30450</string>
+    <string name="ltinfoifsccode">IFSC कोड :- SBIN0030450</string>
+    <string name="ltinfoacctype">खाते का प्रकार:- सेटलमेन्ट</string>
+
+    //English Limit
+    <string name="ltinfoeng">Important  Circular regarding Limit</string>
+    <string name="ltinfocspeng"> Dear CSP,</string>
+    <string name="ltinfoindiaeng">As per the intention of Government of India, after Demonetization, from 1st Jan 2017, NICT Technologies Pvt. Ltd. will not accept / entertain any type of Cash Transactions. Therefore, for taking any limit, CSP should not deposit any Cash amount in NICT Technologies Pvt. Ltd. Account.</string>
+    <string name="ltinfolimiteng">Procedure to be followed for taking limit w.e.f. 1st Jan 2017 is as follows-</string>
+    <string name="ltinfolimit1eng">1)For taking limit, CSP has to deposit the specified amount in his monthly commission earning account.</string>
+    <string name="ltinfolimit2eng">2)CSP, after depositing money in his account, will make payment to NICT Technologies Pvt. Ltd. Account, details of which are given below, mode of payment will only be Net Banking / NEFT / RTGS.</string>
+    <string name="ltinfolimit3eng">3)After receiving the amount, NICT Technologies Pvt. Ltd. will release / issue the said limit to CSPs</string>
+    <string name="ltinfolimit4eng">4)For taking limit, details of NICT Technologies Pvt. Ltd. Account is as follows –</string>
+    <string name="ltinfolimit5eng">5)By following the above process of online payments, NICT Technologies Pvt. Ltd. will release / issue the limit fastly which will save your time also. –</string>
+    <string name="ltinfolimit6eng">6)Note : If the CSP do not follow above procedure than limit will not be released / issued to him by NICT Technologies Pvt. Ltd.
+ Kindly be advised that third-party funds provided electronically and cheque deposits will not be accepted under any circumstances.</string>
+    <string name="ltinfolimit6engred">third-party funds provided electronically and cheque deposits will not be accepted under any circumstances.</string>
+
+    <string name="ltinfocmnameeng">Company Name :-NICT Technologies Pvt. Ltd.</string>
+    <string name="ltinfobanknamenameeng">Bank Name :- State Bank of India	</string>
+    <string name="ltinfoaccnoeng">Account No.:- 35864470247</string>
+    <string name="ltinfobranchnameeng">Branch:-Scheme 94, Indore</string>
+    <string name="ltinfobranchcodeeng">Branch Code:-30450</string>
+    <string name="ltinfoifsccodeeng">IFSC Code:- SBIN0030450</string>
+    <string name="ltinfoacctypeeng">Account Type:- Settlement</string>
+
+    <string name="ltbname">Bank name</string>
+    <string name="ltcheckdate">Check Date</string>
+    <string name="ltcheckno">Check No</string>
+    <string name="ltbrname">Branch Name</string>
+    <string name="ltbcode">Branch Code</string>
+    <string name="lttrno">Transaction No</string>
+
+    <string name="update_available">Update Available</string>
+    <string name="new_update_is_available_on_google_play_store">New update is available on Google Play Store</string>
+    <string name="update">Update</string>
+    <string name="tvshownotice">Show Notice</string>
+    <string name="tvshownoticealert">Show Notice Alert</string>
+
+    //V2
+
+    <string name="otpverify">VerifyOTP</string>
+    <string name="resendotp">Resend OTP</string>
+    <string name="verificationtv">Verification</string>
+    <string name="verificationviasmstv">You will get OTP via SMS</string>
+    <string name="resend_OTP_in">Resend OTP in:</string>
+
+
+    //version 5
+    <string name="banktype">Bank Type:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="stbankingled">Banking Ledger</string>
+
+    <string name="searchledger">Search Ledger </string>
+    <string name="smonth">Select Month </string>
+
+    <string name="searchledgersub">Submit  </string>
+    <string name="cspanme">CSP NAME </string>
+    <string name="branchname">Branch Name </string>
+    <string name="useridcsp">User Id </string>
+    <string name="userlocation">Location </string>
+    <string name="userregion">Region </string>
+    <string name="useroffice">office </string>
+    <string name="useraccopening">ACCOUNT OPENING </string>
+    <string name="userimps">IMPS </string>
+    <string name="userwithrwa">WITHDRAWAL </string>
+    <string name="userdeosit">DEPOSIT </string>
+    <string name="userft">FUND TRANSFER </string>
+    <string name="userfd">FD </string>
+    <string name="userrd">RD </string>
+    <string name="userpmsby">PMSBY </string>
+    <string name="userpmjjby">PMJJBY </string>
+    <string name="useradharseeding">AADHAAR SEEDING </string>
+    <string name="usermobileseeding">MOBILE SEEDING </string>
+    <string name="userepaycardissue">RUPAY CARD ISSUE </string>
+    <string name="userepaycardactiva">RUPAY CARD ACTIVATION </string>
+    <string name="usercheckbookissue">CHEQUE BOOK ISSUE </string>
+    <string name="usercheckbookstop"> CHEQUE STOP  </string>
+    <string name="userbbps"> BBPS </string>
+    <string name="userpassbokprinting"> PASSBOOK PRINTING </string>
+    <string name="usesmsalert">SMS ALERTS </string>
+    <string name="userdebcard">DEB CARD BLOCKED </string>
+    <string name="usesmpjdyod">PMJDYOD </string>
+    <string name="userneft">NEFT </string>
+    <string name="userapy">APY </string>
+    <string name="userincetive">INCENTIVE (AVG BALANCE) </string>
+    <string name="usergt"> Grand Tota</string>
+    <string name="usercspshare"> CSP SHARE</string>
+    <string name="usertds"> TDS</string>
+    <string name="userotherdet">  OTHER DEDUCTION</string>
+    <string name="usernetpay">  NET PAYABLE</string>
+    <string name="usermobile_alternet">AlterNet Mobile</string>
+    <string name="cspagentid">Agent Id </string>
+    <string name="cspzonename">zone_name </string>
+    <string name="stcomplaintview">Complaint View</string>
+    <string name="stcomplaintstatus">Complaint Status</string>
+    <string name="complaintsearch">Complaint Search </string>
+    <string name="stcomplaintfeedback">Complaint Feedback</string>
+    <string name="submitfeedback">Submit Feedback</string>
+    <string name="cdpsttaename">State Name </string>
+    <string name="ccpdname">Division Name </string>
+    <string name="cspdtname">District Name </string>
+    <string name="cspcmobile">Mobile </string>
+    <string name="cspccopmaintid">Complaint Id </string>
+    <string name="cspticketid">Ticket No</string>
+    <string name="cspcserviceid">ServiceId Id </string>
+    <string name="cspccopmaintdate">Complaint Date </string>
+    <string name="cspcresolvedate">Resolution Date </string>
+    <string name="cspccmsg">Complaint Message </string>
+
+    <string name="cspccservicename">Service Name </string>
+    <string name="cspresp">Response Message </string>
+    <string name="cspccomplaintsttaus">Complaint Status </string>
+    <string name="cspreviewsub">Submit Review </string>
+    <string name="stdocuemnt"> Document Show</string>
+    <string name="bomcategory"> br_category</string>
+    <string name="bominvoice"> invoice </string>
+    <string name="bomfinalamount"> final_amt </string>
+    <string name="bomtotalaeps"> total_no_of_aeps </string>
+    <string name="cspfeedbackmsg">Feedback Message </string>
+
+    <string name="bomtotal_aeps_commission">total_aeps_comm </string>
+
+    <string name="bomless_ineligible_count">less_ilg_count </string>
+
+    <string name="bomless_ineligible_com"> less_ilg_com </string>
+
+    <string name="amt_of_aeps_txn"> amt_of_aeps_txn </string>
+
+    <string name="bomfinal_eligible_txn_count">final_ilg_tx_ct </string>
+    <string name="final_elg_tcount">final_elg_tcount </string>
+    <string name="final_elg_comm">final_elg_comm </string>
+
+
+    <string name="bomacct_opening">acct_opening </string>
+    <string name="bomacct_opening_commission"> act_open_com</string>
+
+    <string name="bomapy_count"> apy_count </string>
+    <string name="bomapy_commission"> apy_commission </string>
+
+    <string name="bompmjjby_count"> pmjjby_count </string>
+    <string name="bompmjjby_comm"> pmjjby_comm </string>
+
+    <string name="bompmsby_count"> pmsby_count </string>
+    <string name="bompmsby_commission"> pmsby_commission </string>
+
+    <string name="bomtotal_billing"> total_billing </string>
+    <string name="bomeighty_of_total_billing_bca">billing_bca </string>
+    <string name="bombranch_code_tcs_all"> br_code_tcs_all </string>
+    <string name="bombranch_name_master_file"> branch_name_master_file </string>
+
+    <string name="lednationsbi">(National)Commission</string>
+    <string name="ledmpcg">(MP/CG)Commission </string>
+    <string name="Sbicircalname">Circle Name </string>
+    <string name="Sbicspcode"> CSP Code </string>
+    <string name="Sbicspname">CSP Name </string>
+    <string name="Sbitrancount">Transaction Count </string>
+    <string name="Sbitrantype">Transaction Type </string>
+    <string name="Sbicommamount">Commission Amount</string>
+    <string name="Sbicspay">CSP Pay </string>
+    <string name="sbibankingled">Commission Ledger</string>
+
+
+</resources>
