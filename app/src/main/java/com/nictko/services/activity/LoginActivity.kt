@@ -26,6 +26,9 @@ import com.nictko.services.viewmodel.LoginViewModel
 
 
 class LoginActivity : AppCompatActivity() {
+
+    ///sarvesh
+
     private lateinit var binding: ActivityLoginBinding
     private val viewModel by viewModels<LoginViewModel>()
     private lateinit var progressDialog: Dialog
@@ -162,6 +165,7 @@ class LoginActivity : AppCompatActivity() {
 
     fun processLogin(getdatakoid: String) {
         showToast("Welcome to Nict KO");
+        //showToast("chb")
 
         SessionManager.saveString(this, "koidotp", getdatakoid)
         val intent = Intent(this, OTPVerifyActivity::class.java)
@@ -171,6 +175,7 @@ class LoginActivity : AppCompatActivity() {
 
     fun processLoginother(getdatakoid: String) {
         showToast("Welcome to Nict KO");
+
 //        SessionManager.saveString(this ,"mobile",getdata.mobno!!)
 //        SessionManager.saveString(this ,"koid", getdata.koid!!)
 //        SessionManager.saveString(this ,"username", getdata.sdpName!!)

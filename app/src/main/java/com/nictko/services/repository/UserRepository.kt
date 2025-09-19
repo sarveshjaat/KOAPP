@@ -67,6 +67,7 @@ class UserRepository {
 
 
     suspend fun addsettlementrepo(addSettlementRequest: AddSettlementRequest): Response<AddSettlementResponse>? {
+
         return  UserApi.getApi()?.addsettlemt(addSettlementReq = addSettlementRequest)
     }
 
