@@ -1,0 +1,1 @@
+archiveArtifacts artifacts: '', followSymlinks: false
