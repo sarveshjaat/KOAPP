@@ -28,7 +28,7 @@ import com.nictko.services.viewmodel.LoginViewModel
 class LoginActivity : AppCompatActivity() {
 
 
-    ///sarviknkkbk   ffffffffffff
+    ///logingbranch
 
     private lateinit var binding: ActivityLoginBinding
     private val viewModel by viewModels<LoginViewModel>()
@@ -48,6 +48,7 @@ class LoginActivity : AppCompatActivity() {
             "CRGB",
             "MPGB"
         )
+        //bbb
 
 
     var selectbanktype: String? = null
