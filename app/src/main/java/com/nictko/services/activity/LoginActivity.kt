@@ -28,7 +28,7 @@ import com.nictko.services.viewmodel.LoginViewModel
 class LoginActivity : AppCompatActivity() {
 
 
-    ///sarviknkkbk
+    ///sarviknkkbk   ffffffffffff
 
     private lateinit var binding: ActivityLoginBinding
     private val viewModel by viewModels<LoginViewModel>()
@@ -61,44 +61,8 @@ class LoginActivity : AppCompatActivity() {
         progressDialog.setContentView(view)
         progressDialog.setCancelable(false)
 
-        val url = "http://10.0.2.2:8080/job/koadd/lastBuild/consoleText"
 
-        val request = Request.Builder()
-            .url(url)
-            // If Jenkins needs login:
-            // .addHeader("Authorization", Credentials.basic("user", "token"))
-            .build()
-
-        client.newCall(request).enqueue(object : Callback {
-            override fun onFailure(call: Call, e: IOException) {
-                Log.e("Jenkins", "Failed to connect: ${e.message}")
-            }
-
-            override fun onResponse(call: Call, response: Response) {
-                if (!response.isSuccessful) {
-                    Log.e("Jenkins", "Request failed: ${response.message}")
-                    return
-                }
-
-                val logText = response.body?.string() ?: ""
-                val errors = logText.lines().filter {
-                    it.contains("ERROR", ignoreCase = true) || it.contains("FAILURE", ignoreCase = true)
-                }
-                 gitgit   vvdvdgit    v   Sg
-
-                if (errors.isEmpty()) {
-                    Log.i("Jenkins", "✅ No build errors found")
-                } else {
-                    Log.e("Jenkins", "❌ Build Failed with Errors:")
-                    errors.forEach { Log.e("Jenkins", it) }
-                }
-            }
-        })
-    }
-
-
-
-
+        mmkm
         val adapterspiner = ArrayAdapter(
             this,
             android.R.layout.simple_spinner_item,
