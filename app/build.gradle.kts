@@ -31,6 +31,8 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+        verbose = true             // show full compiler info
+        allWarningsAsErrors = true // o
     }
     buildFeatures{
         dataBinding = true
