@@ -148,7 +148,10 @@ System.out.prit("bhbbb")
         binding.txtInputUserid.setFilters(arrayOf<InputFilter>(AllCaps()))
 
     }
-
+    fun main() {
+        println("Hello")
+        val x: String = 123   // ❌ Type mismatch (Int assigned to String)
+    }
     fun doLogin(getbanktype: String) {
         val setuserid = binding.txtInputUserid.text.toString()
         val setpwd = binding.txtPass.text.toString()
