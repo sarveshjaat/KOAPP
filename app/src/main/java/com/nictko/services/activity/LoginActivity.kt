@@ -60,7 +60,7 @@ class LoginActivity : AppCompatActivity() {
         val view = layoutInflater.inflate(R.layout.progress_dialog, null)
         progressDialog.setContentView(view)
         progressDialog.setCancelable(false)
-
+System.out.prit("bhbbb")
         val adapterspiner = ArrayAdapter(
             this,
             android.R.layout.simple_spinner_item,
