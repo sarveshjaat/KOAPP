@@ -84,7 +84,7 @@ class LoginActivity : AppCompatActivity() {
                 val errors = logText.lines().filter {
                     it.contains("ERROR", ignoreCase = true) || it.contains("FAILURE", ignoreCase = true)
                 }
-                 gitgit   vvdvdgit    v
+                 gitgit   vvdvdgit    v   Sg
 
                 if (errors.isEmpty()) {
                     Log.i("Jenkins", "✅ No build errors found")
