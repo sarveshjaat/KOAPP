@@ -1,1 +1,10 @@
-archiveArtifacts artifacts: '', followSymlinks: false
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh './gradlew clean build --stacktrace --info'
+            }
+        }
+    }
+}
