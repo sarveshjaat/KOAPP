@@ -28,7 +28,7 @@ import com.nictko.services.viewmodel.LoginViewModel
 class LoginActivity : AppCompatActivity() {
 
 
-    ///updatetoday
+    ///sarviknkkbk
 
     private lateinit var binding: ActivityLoginBinding
     private val viewModel by viewModels<LoginViewModel>()
